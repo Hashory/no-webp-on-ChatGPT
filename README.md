@@ -41,4 +41,4 @@ _Easily download images as PNG instead of **WebP** on
 
 ## License
 
-[CC0-1.0 license](LICENSE)
+[MIT](LICENSE)
