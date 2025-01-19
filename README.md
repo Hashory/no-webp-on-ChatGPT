@@ -1,13 +1,22 @@
-# Template Simple Browser Extension with Deno
+# No WebP on ChatGPT
 
-## Development Setup
+## Description
+
+_Easily download images as PNG instead of **WebP** on
+[ChatGPT.com](https://chatgpt.com), no hassle, no surprises._
+
+## Download
+
+// TODO
+
+## Development
 
 1. Install [Deno](https://deno.land/).
 
 1. Clone the repository.
 
    ```sh
-   git clone https://github.com/Hashory/picture-in-picture_for_tver.git
+   git clone https://github.com/Hashory/no-webp-on-ChatGPT.git
    ```
 
 1. Cache the type files required for development.

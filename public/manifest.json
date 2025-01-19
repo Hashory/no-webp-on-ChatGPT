@@ -2,12 +2,11 @@
 	"manifest_version": 3,
 	"name": "No WebP on ChatGPT",
 	"version": "1.0",
-	"description": "Converts WebP files downloaded from ChatGPT.com to PNG or JPEG.",
+	"description": "Easily download images as PNG instead of WebP on ChatGPT.com.",
 	"host_permissions": [
 		"*://chatgpt.com/*"
 	],
 	"permissions": [
-		"storage",
 		"downloads"
 	],
 	"action": {

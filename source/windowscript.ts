@@ -19,7 +19,12 @@ URL.createObjectURL = function (blob, ...args) {
 						// Create a link element to download the converted image
 						const link = document.createElement('a');
 						link.href = newUrl;
-						link.download = 'converted-image.png';
+
+						// Get current date and time
+						const now = new Date();
+						const formattedDate = now.toISOString().replace(/[:.]/g, '-');
+						link.download = `chatgpt-image-${formattedDate}.png`;
+
 						document.body.appendChild(link);
 						link.click();
 						document.body.removeChild(link);
@@ -31,7 +36,7 @@ URL.createObjectURL = function (blob, ...args) {
 			img.src = reader.result as string;
 		};
 		reader.readAsDataURL(blob);
-		return; // Return undefined to prevent original URL creation
+		return originalCreateObjectURL(blob, ...args); // Return undefined to prevent original URL creation
 	}
 	return originalCreateObjectURL(blob, ...args);
 };
