@@ -1,10 +1,14 @@
 {
 	"manifest_version": 3,
-	"name": "Your Extension Name",
+	"name": "No WebP on ChatGPT",
 	"version": "1.0",
-	"description": "Your extension description.",
+	"description": "Converts WebP files downloaded from ChatGPT.com to PNG or JPEG.",
 	"host_permissions": [
-		"*://yourwebsite.com/*"
+		"*://chatgpt.com/*"
+	],
+	"permissions": [
+		"storage",
+		"downloads"
 	],
 	"action": {
 		"default_popup": "popup.html",
@@ -25,8 +29,17 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["*://yourwebsite.com/*"],
+			"matches": ["*://chatgpt.com/*"],
 			"js": ["contentscript.js"]
 		}
-	]
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["windowscript.js"],
+			"matches": ["*://chatgpt.com/*"]
+		}
+	],
+	"background": {
+		"service_worker": "background.js"
+	}
 }
