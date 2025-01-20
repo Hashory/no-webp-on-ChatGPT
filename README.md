@@ -1,6 +1,9 @@
-# No WebP on ChatGPT
+<h1>
+<img src="public/icon/icon256.png" alt="logo" style="height:1.3em; aspect-ratio:1/1; vertical-align:middle;">
+No WebP on ChatGPT
+</h1>
 
-## Description
+![Save button tooltip saying 'This ain’t WebP. It’s PNG.' for downloading images as PNG](https://github.com/user-attachments/assets/cdc64e5b-1a04-4a6d-9b1e-64df04d9a6e8)
 
 _Easily download images as PNG instead of **WebP** on
 [ChatGPT.com](https://chatgpt.com), no hassle, no surprises._
