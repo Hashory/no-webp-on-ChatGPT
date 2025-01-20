@@ -1,5 +1,5 @@
 <h1>
-<img src="public/icon/icon256.png" alt="logo" style="height:1.3em; aspect-ratio:1/1; vertical-align:middle;">
+<img src="public/icon/icon32.png" alt="logo" style="height:1.3em; aspect-ratio:1/1; vertical-align:middle;">
 No WebP on ChatGPT
 </h1>
 
