@@ -1,6 +1,10 @@
+/**
+ * Override the default behavior of URL.createObjectURL to handle WebP images.
+ */
 const originalCreateObjectURL = URL.createObjectURL;
 URL.createObjectURL = function (blob, ...args) {
 	console.log('Created Blob URL', blob, args);
+	// Check if the blob is a WebP image
 	if (blob instanceof Blob && blob.type === 'image/webp') {
 		const reader = new FileReader();
 		reader.onload = function () {
@@ -11,6 +15,7 @@ URL.createObjectURL = function (blob, ...args) {
 				canvas.height = img.height;
 				const ctx = canvas.getContext('2d');
 				ctx?.drawImage(img, 0, 0);
+				// Convert the image to PNG format
 				canvas.toBlob(function (newBlob) {
 					if (newBlob) {
 						const newUrl = originalCreateObjectURL(newBlob, ...args);
@@ -36,7 +41,8 @@ URL.createObjectURL = function (blob, ...args) {
 			img.src = reader.result as string;
 		};
 		reader.readAsDataURL(blob);
-		return originalCreateObjectURL(blob, ...args); // Return undefined to prevent original URL creation
+		// Return the original createObjectURL function for non-WebP images
+		return originalCreateObjectURL(blob, ...args);
 	}
 	return originalCreateObjectURL(blob, ...args);
 };
