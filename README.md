@@ -10,7 +10,9 @@ _Easily download images as PNG instead of **WebP** on
 
 ## Download
 
-// TODO
+<a href="https://chromewebstore.google.com/detail/bipkiknbjmdnldpkmjponlhgfmopfffg">
+   <img src="https://github.com/user-attachments/assets/d4a03bdd-daa8-4dbc-9479-6334d995782a" alt="Obtain 'No WebP on ChatGPT' for Chromium.">
+</a>
 
 ## Development
 
