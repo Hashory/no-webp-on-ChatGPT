@@ -1,3 +1,7 @@
+> [!WARNING]
+> ChatGPT has changed its behavior and no longer downloads images as WebP files.\
+> As a result, this extension is no longer necessary, and this repository has been archived.
+
 <h1>
 <img src="public/icon/icon32.png" alt="logo" style="height:1.3em; aspect-ratio:1/1; vertical-align:middle;">
 No WebP on ChatGPT
